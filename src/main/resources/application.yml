@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=utf8&useSSL=false
+    name:
+    username: root
+    password: 526170
+    type: com.alibaba.druid.pool.DruidDataSource
+
+liquibase:
+  change-log: classpath:database/changelog-master.xml
+mybatis-plus:
+  mapper-locations: com/zeus/realz/persistence/*Mapper.xml
